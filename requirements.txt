@@ -1,0 +1,4 @@
+openai>=1.0
+python-dotenv>=1.0
+langgraph>=1.0
+weaviate-client>=4.9

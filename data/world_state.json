@@ -1,0 +1,1013 @@
+{
+  "_meta": {
+    "generated_by": "data_gen/build_world_state.py",
+    "seed": 7,
+    "today": "2026-03-15",
+    "refund_window_days": 14,
+    "note": "Single source of truth. Tools and deterministic labels derive from this."
+  },
+  "plan_rules": {
+    "free": {
+      "price_per_seat": 0,
+      "seats": 3,
+      "api": "none",
+      "api_rate_limit": 0,
+      "sso": false,
+      "audit_logs": false,
+      "retention_days": 30,
+      "priority_sla": false
+    },
+    "pro": {
+      "price_per_seat": 12,
+      "seats": 25,
+      "api": "read_only",
+      "api_rate_limit": 60,
+      "sso": false,
+      "audit_logs": false,
+      "retention_days": 365,
+      "priority_sla": false
+    },
+    "business": {
+      "price_per_seat": 28,
+      "seats": 100,
+      "api": "full",
+      "api_rate_limit": 600,
+      "sso": true,
+      "audit_logs": false,
+      "retention_days": 1095,
+      "priority_sla": true
+    },
+    "enterprise": {
+      "price_per_seat": 45,
+      "seats": 9999,
+      "api": "full",
+      "api_rate_limit": 6000,
+      "sso": true,
+      "audit_logs": true,
+      "retention_days": 3650,
+      "priority_sla": true
+    }
+  },
+  "services": [
+    "auth-service",
+    "api-gateway",
+    "export-service",
+    "billing-service",
+    "docs-service"
+  ],
+  "customers": [
+    {
+      "customer_id": "cust_enterprise_000",
+      "name": "Meridian Analytics",
+      "plan": "enterprise",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2025-09-02",
+      "seats_purchased": 42,
+      "seats_used": 22
+    },
+    {
+      "customer_id": "cust_enterprise_001",
+      "name": "Quantum Financial",
+      "plan": "enterprise",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2024-04-08",
+      "seats_purchased": 47,
+      "seats_used": 27
+    },
+    {
+      "customer_id": "cust_enterprise_002",
+      "name": "Northwind Labs",
+      "plan": "enterprise",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2025-11-21",
+      "seats_purchased": 25,
+      "seats_used": 5
+    },
+    {
+      "customer_id": "cust_enterprise_003",
+      "name": "Acme Robotics",
+      "plan": "enterprise",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2024-08-04",
+      "seats_purchased": 74,
+      "seats_used": 54
+    },
+    {
+      "customer_id": "cust_enterprise_004",
+      "name": "Cobalt Health",
+      "plan": "enterprise",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2025-01-25",
+      "seats_purchased": 28,
+      "seats_used": 8
+    },
+    {
+      "customer_id": "cust_enterprise_005",
+      "name": "Vertex Media",
+      "plan": "enterprise",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2025-12-06",
+      "seats_purchased": 59,
+      "seats_used": 39
+    },
+    {
+      "customer_id": "cust_business_006",
+      "name": "Solaris Energy",
+      "plan": "business",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2024-09-02",
+      "seats_purchased": 100,
+      "seats_used": 60
+    },
+    {
+      "customer_id": "cust_business_007",
+      "name": "Ironclad Legal",
+      "plan": "business",
+      "region": "EU",
+      "locale": "de",
+      "signup_date": "2025-12-27",
+      "seats_purchased": 100,
+      "seats_used": 40
+    },
+    {
+      "customer_id": "cust_business_008",
+      "name": "BlueOrbit Games",
+      "plan": "business",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2024-11-16",
+      "seats_purchased": 100,
+      "seats_used": 7
+    },
+    {
+      "customer_id": "cust_business_009",
+      "name": "Trailhead Outdoors",
+      "plan": "business",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2025-11-24",
+      "seats_purchased": 100,
+      "seats_used": 28
+    },
+    {
+      "customer_id": "cust_business_010",
+      "name": "Pixel Forge",
+      "plan": "business",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2025-11-03",
+      "seats_purchased": 100,
+      "seats_used": 5
+    },
+    {
+      "customer_id": "cust_business_011",
+      "name": "Harbor Logistics",
+      "plan": "business",
+      "region": "APAC",
+      "locale": "es",
+      "signup_date": "2024-11-26",
+      "seats_purchased": 100,
+      "seats_used": 37
+    },
+    {
+      "customer_id": "cust_pro_012",
+      "name": "Cedar Bank",
+      "plan": "pro",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2023-10-11",
+      "seats_purchased": 25,
+      "seats_used": 3
+    },
+    {
+      "customer_id": "cust_pro_013",
+      "name": "Nimbus Cloudworks",
+      "plan": "pro",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2025-09-30",
+      "seats_purchased": 25,
+      "seats_used": 20
+    },
+    {
+      "customer_id": "cust_pro_014",
+      "name": "Atlas Freight",
+      "plan": "pro",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2024-04-29",
+      "seats_purchased": 25,
+      "seats_used": 9
+    },
+    {
+      "customer_id": "cust_pro_015",
+      "name": "Willow Education",
+      "plan": "pro",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2024-06-17",
+      "seats_purchased": 25,
+      "seats_used": 22
+    },
+    {
+      "customer_id": "cust_pro_016",
+      "name": "Redwood Ventures",
+      "plan": "pro",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2024-06-23",
+      "seats_purchased": 25,
+      "seats_used": 3
+    },
+    {
+      "customer_id": "cust_pro_017",
+      "name": "Summit Retail",
+      "plan": "pro",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2024-12-24",
+      "seats_purchased": 25,
+      "seats_used": 20
+    },
+    {
+      "customer_id": "cust_pro_018",
+      "name": "Orbit Telecom",
+      "plan": "pro",
+      "region": "US",
+      "locale": "fr",
+      "signup_date": "2025-06-22",
+      "seats_purchased": 25,
+      "seats_used": 3
+    },
+    {
+      "customer_id": "cust_pro_019",
+      "name": "Fjord Design",
+      "plan": "pro",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2024-07-13",
+      "seats_purchased": 25,
+      "seats_used": 25
+    },
+    {
+      "customer_id": "cust_free_020",
+      "name": "Lumen Diagnostics",
+      "plan": "free",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2025-04-13",
+      "seats_purchased": 3,
+      "seats_used": 2
+    },
+    {
+      "customer_id": "cust_free_021",
+      "name": "Copperline Mfg",
+      "plan": "free",
+      "region": "US",
+      "locale": "en",
+      "signup_date": "2025-09-09",
+      "seats_purchased": 3,
+      "seats_used": 3
+    },
+    {
+      "customer_id": "cust_free_022",
+      "name": "Delta Aerospace",
+      "plan": "free",
+      "region": "EU",
+      "locale": "en",
+      "signup_date": "2024-06-29",
+      "seats_purchased": 3,
+      "seats_used": 2
+    },
+    {
+      "customer_id": "cust_free_023",
+      "name": "Sable Consulting",
+      "plan": "free",
+      "region": "APAC",
+      "locale": "en",
+      "signup_date": "2024-07-10",
+      "seats_purchased": 3,
+      "seats_used": 3
+    }
+  ],
+  "subscriptions": {
+    "cust_enterprise_000": {
+      "plan": "enterprise",
+      "status": "active",
+      "renewal_date": "2026-05-11",
+      "mrr": 1890,
+      "seats_used": 22,
+      "seats_purchased": 42
+    },
+    "cust_enterprise_001": {
+      "plan": "enterprise",
+      "status": "active",
+      "renewal_date": "2026-05-02",
+      "mrr": 2115,
+      "seats_used": 27,
+      "seats_purchased": 47
+    },
+    "cust_enterprise_002": {
+      "plan": "enterprise",
+      "status": "active",
+      "renewal_date": "2026-03-31",
+      "mrr": 1125,
+      "seats_used": 5,
+      "seats_purchased": 25
+    },
+    "cust_enterprise_003": {
+      "plan": "enterprise",
+      "status": "active",
+      "renewal_date": "2026-03-26",
+      "mrr": 3330,
+      "seats_used": 54,
+      "seats_purchased": 74
+    },
+    "cust_enterprise_004": {
+      "plan": "enterprise",
+      "status": "active",
+      "renewal_date": "2026-04-26",
+      "mrr": 1260,
+      "seats_used": 8,
+      "seats_purchased": 28
+    },
+    "cust_enterprise_005": {
+      "plan": "enterprise",
+      "status": "active",
+      "renewal_date": "2026-04-25",
+      "mrr": 2655,
+      "seats_used": 39,
+      "seats_purchased": 59
+    },
+    "cust_business_006": {
+      "plan": "business",
+      "status": "active",
+      "renewal_date": "2026-04-29",
+      "mrr": 2800,
+      "seats_used": 60,
+      "seats_purchased": 100
+    },
+    "cust_business_007": {
+      "plan": "business",
+      "status": "active",
+      "renewal_date": "2026-04-01",
+      "mrr": 2800,
+      "seats_used": 40,
+      "seats_purchased": 100
+    },
+    "cust_business_008": {
+      "plan": "business",
+      "status": "active",
+      "renewal_date": "2026-04-12",
+      "mrr": 2800,
+      "seats_used": 7,
+      "seats_purchased": 100
+    },
+    "cust_business_009": {
+      "plan": "business",
+      "status": "past_due",
+      "renewal_date": "2026-03-26",
+      "mrr": 2800,
+      "seats_used": 28,
+      "seats_purchased": 100
+    },
+    "cust_business_010": {
+      "plan": "business",
+      "status": "active",
+      "renewal_date": "2026-04-24",
+      "mrr": 2800,
+      "seats_used": 5,
+      "seats_purchased": 100
+    },
+    "cust_business_011": {
+      "plan": "business",
+      "status": "active",
+      "renewal_date": "2026-05-04",
+      "mrr": 2800,
+      "seats_used": 37,
+      "seats_purchased": 100
+    },
+    "cust_pro_012": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-03-24",
+      "mrr": 300,
+      "seats_used": 3,
+      "seats_purchased": 25
+    },
+    "cust_pro_013": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-04-25",
+      "mrr": 300,
+      "seats_used": 20,
+      "seats_purchased": 25
+    },
+    "cust_pro_014": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-03-23",
+      "mrr": 300,
+      "seats_used": 9,
+      "seats_purchased": 25
+    },
+    "cust_pro_015": {
+      "plan": "pro",
+      "status": "canceled",
+      "renewal_date": "2026-03-12",
+      "mrr": 300,
+      "seats_used": 22,
+      "seats_purchased": 25
+    },
+    "cust_pro_016": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-04-02",
+      "mrr": 300,
+      "seats_used": 3,
+      "seats_purchased": 25
+    },
+    "cust_pro_017": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-04-20",
+      "mrr": 300,
+      "seats_used": 20,
+      "seats_purchased": 25
+    },
+    "cust_pro_018": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-05-02",
+      "mrr": 300,
+      "seats_used": 3,
+      "seats_purchased": 25
+    },
+    "cust_pro_019": {
+      "plan": "pro",
+      "status": "active",
+      "renewal_date": "2026-04-23",
+      "mrr": 300,
+      "seats_used": 25,
+      "seats_purchased": 25
+    },
+    "cust_free_020": {
+      "plan": "free",
+      "status": "active",
+      "renewal_date": "2026-04-16",
+      "mrr": 0,
+      "seats_used": 2,
+      "seats_purchased": 3
+    },
+    "cust_free_021": {
+      "plan": "free",
+      "status": "active",
+      "renewal_date": "2026-05-08",
+      "mrr": 0,
+      "seats_used": 3,
+      "seats_purchased": 3
+    },
+    "cust_free_022": {
+      "plan": "free",
+      "status": "active",
+      "renewal_date": "2026-04-09",
+      "mrr": 0,
+      "seats_used": 2,
+      "seats_purchased": 3
+    },
+    "cust_free_023": {
+      "plan": "free",
+      "status": "active",
+      "renewal_date": "2026-04-18",
+      "mrr": 0,
+      "seats_used": 3,
+      "seats_purchased": 3
+    }
+  },
+  "invoices": {
+    "cust_enterprise_000": [
+      {
+        "invoice_id": "inv_000_a",
+        "date": "2026-01-29",
+        "amount": 1890.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_000_b",
+        "date": "2026-03-09",
+        "amount": 1890.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_000_dup",
+        "date": "2026-03-09",
+        "amount": 1890.0,
+        "status": "paid",
+        "description": "Monthly subscription (DUPLICATE CHARGE)"
+      }
+    ],
+    "cust_enterprise_001": [
+      {
+        "invoice_id": "inv_001_a",
+        "date": "2026-01-29",
+        "amount": 2115.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_001_b",
+        "date": "2026-03-09",
+        "amount": 2115.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_enterprise_002": [
+      {
+        "invoice_id": "inv_002_a",
+        "date": "2026-01-29",
+        "amount": 1125.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_002_b",
+        "date": "2026-03-09",
+        "amount": 1125.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_enterprise_003": [
+      {
+        "invoice_id": "inv_003_a",
+        "date": "2026-01-29",
+        "amount": 3330.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_003_b",
+        "date": "2026-03-09",
+        "amount": 3330.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_003_dup",
+        "date": "2026-03-09",
+        "amount": 3330.0,
+        "status": "paid",
+        "description": "Monthly subscription (DUPLICATE CHARGE)"
+      }
+    ],
+    "cust_enterprise_004": [
+      {
+        "invoice_id": "inv_004_a",
+        "date": "2026-01-29",
+        "amount": 1260.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_004_b",
+        "date": "2026-03-09",
+        "amount": 1260.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_enterprise_005": [
+      {
+        "invoice_id": "inv_005_a",
+        "date": "2026-01-29",
+        "amount": 2655.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_005_b",
+        "date": "2026-03-09",
+        "amount": 2655.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_005_old",
+        "date": "2026-02-13",
+        "amount": 2655.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_business_006": [
+      {
+        "invoice_id": "inv_006_a",
+        "date": "2026-01-29",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_006_b",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_006_dupold",
+        "date": "2026-02-03",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription (DUPLICATE CHARGE)"
+      }
+    ],
+    "cust_business_007": [
+      {
+        "invoice_id": "inv_007_a",
+        "date": "2026-01-29",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_007_b",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_business_008": [
+      {
+        "invoice_id": "inv_008_a",
+        "date": "2026-01-29",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_008_b",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_008_dup",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription (DUPLICATE CHARGE)"
+      }
+    ],
+    "cust_business_009": [
+      {
+        "invoice_id": "inv_009_a",
+        "date": "2026-01-29",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_009_b",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_business_010": [
+      {
+        "invoice_id": "inv_010_a",
+        "date": "2026-01-29",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_010_b",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_business_011": [
+      {
+        "invoice_id": "inv_011_a",
+        "date": "2026-01-29",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_011_b",
+        "date": "2026-03-09",
+        "amount": 2800.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_pro_012": [
+      {
+        "invoice_id": "inv_012_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_012_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_012_dup",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription (DUPLICATE CHARGE)"
+      }
+    ],
+    "cust_pro_013": [
+      {
+        "invoice_id": "inv_013_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_013_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_pro_014": [
+      {
+        "invoice_id": "inv_014_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_014_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_014_old",
+        "date": "2026-02-13",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_pro_015": [
+      {
+        "invoice_id": "inv_015_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_015_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_pro_016": [
+      {
+        "invoice_id": "inv_016_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_016_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_pro_017": [
+      {
+        "invoice_id": "inv_017_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_017_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_pro_018": [
+      {
+        "invoice_id": "inv_018_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_018_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_018_ref",
+        "date": "2026-03-10",
+        "amount": 300.0,
+        "status": "refunded",
+        "description": "Monthly subscription (refunded on request)"
+      }
+    ],
+    "cust_pro_019": [
+      {
+        "invoice_id": "inv_019_a",
+        "date": "2026-01-29",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_019_b",
+        "date": "2026-03-09",
+        "amount": 300.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_free_020": [
+      {
+        "invoice_id": "inv_020_a",
+        "date": "2026-01-29",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_020_b",
+        "date": "2026-03-09",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_free_021": [
+      {
+        "invoice_id": "inv_021_a",
+        "date": "2026-01-29",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_021_b",
+        "date": "2026-03-09",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_free_022": [
+      {
+        "invoice_id": "inv_022_a",
+        "date": "2026-01-29",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_022_b",
+        "date": "2026-03-09",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ],
+    "cust_free_023": [
+      {
+        "invoice_id": "inv_023_a",
+        "date": "2026-01-29",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      },
+      {
+        "invoice_id": "inv_023_b",
+        "date": "2026-03-09",
+        "amount": 0.0,
+        "status": "paid",
+        "description": "Monthly subscription"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "id": "INC-2041",
+      "service": "auth-service",
+      "status": "active",
+      "started": "2026-03-15",
+      "region": "EU",
+      "affected_plans": [
+        "business",
+        "enterprise"
+      ],
+      "summary": "SSO (SAML) logins failing for some EU tenants after certificate rotation."
+    },
+    {
+      "id": "INC-2042",
+      "service": "api-gateway",
+      "status": "active",
+      "started": "2026-03-15",
+      "region": "global",
+      "affected_plans": [
+        "business",
+        "enterprise"
+      ],
+      "summary": "Elevated 5xx and 429s on public API for Business/Enterprise tiers."
+    },
+    {
+      "id": "INC-2039",
+      "service": "export-service",
+      "status": "resolved",
+      "started": "2026-03-13",
+      "region": "global",
+      "affected_plans": [
+        "free",
+        "pro",
+        "business",
+        "enterprise"
+      ],
+      "summary": "Project export jobs timing out; resolved after worker scale-up."
+    }
+  ],
+  "ticket_history": {
+    "cust_enterprise_002": [
+      {
+        "ticket_id": "t_5501",
+        "date": "2026-01-14",
+        "category": "billing",
+        "summary": "Asked about annual billing discount. Prefers replies in Spanish.",
+        "resolved": true,
+        "note": "language_pref=es"
+      },
+      {
+        "ticket_id": "t_5502",
+        "date": "2026-02-23",
+        "category": "technical",
+        "summary": "Audit log export returned partial data. Left UNRESOLVED, promised follow-up.",
+        "resolved": false
+      }
+    ],
+    "cust_enterprise_000": [
+      {
+        "ticket_id": "t_5601",
+        "date": "2026-02-28",
+        "category": "technical",
+        "summary": "SSO misconfiguration during onboarding; resolved by re-uploading metadata.",
+        "resolved": true
+      }
+    ],
+    "cust_business_008": [
+      {
+        "ticket_id": "t_5701",
+        "date": "2026-03-06",
+        "category": "billing",
+        "summary": "Requested refund outside policy window; declined per policy.",
+        "resolved": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,658 @@
+[
+  {
+    "doc_id": "account_access_recovery",
+    "title": "Account Access & Recovery",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "api_access_and_limits",
+    "title": "API Access & Rate Limits",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "audit_logs_guide",
+    "title": "Audit Logs (Enterprise)",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "billing_and_invoices",
+    "title": "Billing & Invoices",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "data_retention_policy",
+    "title": "Data Retention & Deletion",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_account_0",
+    "title": "Setting up your profile",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_account_1",
+    "title": "Notification preferences",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_account_2",
+    "title": "Renaming your workspace",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_account_3",
+    "title": "Inviting external guests",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_account_4",
+    "title": "Deactivating a member",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_api_0",
+    "title": "Getting started with API keys",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_api_1",
+    "title": "Paginating large API responses",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_api_2",
+    "title": "Choosing an SDK or client library",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_api_3",
+    "title": "Sandbox vs production environments",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_api_4",
+    "title": "API changelog and versioning",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_api_error_categories",
+    "title": "Common API error categories",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_billing_0",
+    "title": "How seat-based pricing works",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_billing_1",
+    "title": "Purchase orders and procurement",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_billing_2",
+    "title": "Setting spending alerts",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_billing_3",
+    "title": "How usage is metered",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_billing_4",
+    "title": "Managing multiple workspaces' billing",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_billing_taxes",
+    "title": "Taxes and VAT on your invoices",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_export_basics",
+    "title": "About exporting your data",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_exports_0",
+    "title": "Supported export formats",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_exports_1",
+    "title": "Scheduling recurring exports",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_exports_2",
+    "title": "Importing data into CloudDesk",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_exports_3",
+    "title": "Archiving old projects",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_exports_4",
+    "title": "Data residency overview",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_login_0",
+    "title": "Password best practices",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_login_1",
+    "title": "Clearing browser cookies for sign-in issues",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_login_2",
+    "title": "How session timeouts work",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_login_3",
+    "title": "Trusting a device for faster sign-in",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_login_4",
+    "title": "Signing in on mobile",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_refund_credits",
+    "title": "Understanding account credits",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_refunds_0",
+    "title": "How proration works when you upgrade",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_refunds_1",
+    "title": "Understanding your billing cycle",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_refunds_2",
+    "title": "Updating your payment method",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_refunds_3",
+    "title": "Reading your invoice line items",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_refunds_4",
+    "title": "Switching between monthly and annual billing",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_tls_overview",
+    "title": "How CloudDesk secures API connections",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "dist_webhooks_overview",
+    "title": "An overview of CloudDesk webhooks",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_app_slow",
+    "title": "The app is really slow today",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_cancel",
+    "title": "How do I stop my subscription?",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_double_billed",
+    "title": "I think you billed me twice",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_get_data_back",
+    "title": "Can I get back a project I deleted?",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_login_google",
+    "title": "Why can't I sign in with my company Google account?",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_new_teammate",
+    "title": "Adding someone to our team",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "faq_receipt",
+    "title": "Where do I get a receipt for accounting?",
+    "doc_type": "faq",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "handbook_admin",
+    "title": "CloudDesk Admin Guide",
+    "doc_type": "handbook",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "handbook_api",
+    "title": "CloudDesk API Guide",
+    "doc_type": "handbook",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "handbook_billing",
+    "title": "CloudDesk Billing Handbook",
+    "doc_type": "handbook",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "known_incidents",
+    "title": "Status Page \u2014 Current & Recent Incidents",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "plan_changes_and_upgrades",
+    "title": "Plan Changes, Upgrades & Downgrades",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_features_business",
+    "title": "Business Feature Sheet",
+    "doc_type": "policy",
+    "plan": "business",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_features_enterprise",
+    "title": "Enterprise Feature Sheet",
+    "doc_type": "policy",
+    "plan": "enterprise",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_features_free",
+    "title": "Free Feature Sheet",
+    "doc_type": "policy",
+    "plan": "free",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_features_pro",
+    "title": "Pro Feature Sheet",
+    "doc_type": "policy",
+    "plan": "pro",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_refund_annual",
+    "title": "Refund Policy \u2014 Annual",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_refund_monthly",
+    "title": "Refund Policy \u2014 Monthly",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_retention_business",
+    "title": "Data Retention \u2014 Business",
+    "doc_type": "policy",
+    "plan": "business",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_retention_enterprise",
+    "title": "Data Retention \u2014 Enterprise",
+    "doc_type": "policy",
+    "plan": "enterprise",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_retention_free",
+    "title": "Data Retention \u2014 Free",
+    "doc_type": "policy",
+    "plan": "free",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "policy_retention_pro",
+    "title": "Data Retention \u2014 Pro",
+    "doc_type": "policy",
+    "plan": "pro",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "postmortem_inc2041",
+    "title": "Postmortem: INC-2041 SSO login failures (EU)",
+    "doc_type": "postmortem",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "postmortem_inc2042",
+    "title": "Postmortem: INC-2042 elevated API 5xx/429",
+    "doc_type": "postmortem",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "pricing_plans",
+    "title": "CloudDesk Plans & Pricing",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "refund_policy",
+    "title": "CloudDesk Refund Policy",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "release_notes_2026_02",
+    "title": "Release notes \u2014 February 2026",
+    "doc_type": "release_note",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "release_notes_2026_03",
+    "title": "Release notes \u2014 March 2026",
+    "doc_type": "release_note",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "security_and_compliance",
+    "title": "Security, Compliance & Support Disclosure Rules",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "sso_setup_guide",
+    "title": "SSO Setup & Troubleshooting (SAML / OIDC)",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "troubleshooting_exports",
+    "title": "Troubleshooting Project & Doc Exports",
+    "doc_type": "policy",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_api_403",
+    "title": "API write requests return 403 Forbidden",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_api_429",
+    "title": "Resolving HTTP 429 (Too Many Requests)",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_api_5xx",
+    "title": "Intermittent 5xx errors on the API",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_audit_empty",
+    "title": "Audit Logs page is blank",
+    "doc_type": "troubleshooting",
+    "plan": "enterprise",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_export_timeout",
+    "title": "Export job times out with EXPORT_TIMEOUT",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_login_locked",
+    "title": "Account locked after failed sign-in attempts",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_mfa_lost",
+    "title": "Lost MFA device \u2014 regaining access",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_ssl_cipher",
+    "title": "ERR_SSL_VERSION_OR_CIPHER_MISMATCH when calling the API",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_sso_cert_rotation",
+    "title": "SAML login fails after certificate rotation",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  },
+  {
+    "doc_id": "ts_webhook_retry",
+    "title": "Webhooks not delivered (WEBHOOK_RETRY_EXHAUSTED)",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "version": "v1",
+    "date": "2026-03-15"
+  }
+]

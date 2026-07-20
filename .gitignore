@@ -1,0 +1,29 @@
+# ── secrets ───────────────────────────────────────────────
+.env
+
+# ── python / OS junk ──────────────────────────────────────
+__pycache__/
+*.pyc
+.DS_Store
+
+# ── regenerable caches ────────────────────────────────────
+data_gen/.corpus_cache/
+
+# ── instructor-only material (answer keys, design docs) ───
+handout/
+PROJECT_DESIGN.md
+RAG_DESIGN.md
+
+# ── RAG HOMEWORK — withheld so students build it ──────────
+# (a) the whole retrieval pipeline (also covers rag/.emb_cache.json)
+rag/
+# (b) the failure-case fixes + extra diagnostics
+sessions/s5_rag/step1_metadata.py
+sessions/s5_rag/step2_rerank.py
+sessions/s5_rag/step3_hyde.py
+sessions/s5_rag/step4_abstention.py
+sessions/s5_rag/inspect_retrieval.py
+sessions/s5_rag/rag_retrieval_report.py
+sessions/s5_rag/run_rag_gap.py
+# RAG → agent integration (not assigned yet)
+sessions/s6_agentic_rag/

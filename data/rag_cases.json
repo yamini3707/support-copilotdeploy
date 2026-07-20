@@ -1,0 +1,338 @@
+[
+  {
+    "id": "rag_000_metadata",
+    "slice": "metadata",
+    "ticket": "How long do we have to get a deleted project back before it's gone for good?",
+    "customer_context": {
+      "customer_id": "cust_free_020",
+      "plan": "free"
+    },
+    "gold_docs": [
+      "policy_retention_free"
+    ],
+    "must_mention": [
+      "deleted data on the free plan is recoverable for 30 days"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_001_metadata",
+    "slice": "metadata",
+    "ticket": "How long do we have to get a deleted project back before it's gone for good?",
+    "customer_context": {
+      "customer_id": "cust_pro_012",
+      "plan": "pro"
+    },
+    "gold_docs": [
+      "policy_retention_pro"
+    ],
+    "must_mention": [
+      "deleted data on the pro plan is recoverable for 365 days"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_002_metadata",
+    "slice": "metadata",
+    "ticket": "How long do we have to get a deleted project back before it's gone for good?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "policy_retention_business"
+    ],
+    "must_mention": [
+      "deleted data on the business plan is recoverable for 1095 days"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_003_metadata",
+    "slice": "metadata",
+    "ticket": "How long do we have to get a deleted project back before it's gone for good?",
+    "customer_context": {
+      "customer_id": "cust_enterprise_000",
+      "plan": "enterprise"
+    },
+    "gold_docs": [
+      "policy_retention_enterprise"
+    ],
+    "must_mention": [
+      "deleted data on the enterprise plan is recoverable for 3650 days"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_004_hybrid",
+    "slice": "hybrid",
+    "ticket": "Our API calls fail with ERR_SSL_VERSION_OR_CIPHER_MISMATCH. What's wrong?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "ts_ssl_cipher"
+    ],
+    "must_mention": [
+      "it is a TLS version/cipher issue; upgrade the client to TLS 1.2+"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_005_hybrid",
+    "slice": "hybrid",
+    "ticket": "Webhooks stopped arriving \u2014 our logs show WEBHOOK_RETRY_EXHAUSTED.",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "ts_webhook_retry"
+    ],
+    "must_mention": [
+      "retries are exhausted after repeated non-2xx responses; the endpoint must return 200"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_006_hybrid",
+    "slice": "hybrid",
+    "ticket": "Every export dies with EXPORT_TIMEOUT. Help.",
+    "customer_context": {
+      "customer_id": "cust_pro_012",
+      "plan": "pro"
+    },
+    "gold_docs": [
+      "ts_export_timeout"
+    ],
+    "must_mention": [
+      "large exports can time out; split by project or date range, or stream via the API"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_007_hybrid",
+    "slice": "hybrid",
+    "ticket": "Is INC-2041 fixed yet? Our EU logins were failing.",
+    "customer_context": {
+      "customer_id": "cust_enterprise_000",
+      "plan": "enterprise"
+    },
+    "gold_docs": [
+      "postmortem_inc2041"
+    ],
+    "must_mention": [
+      "INC-2041 concerned EU SSO login failures after a certificate rotation"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_008_hybrid",
+    "slice": "hybrid",
+    "ticket": "Which plan gives exactly 6000 API requests per minute?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "policy_features_enterprise"
+    ],
+    "must_mention": [
+      "the Enterprise plan allows 6000 API requests per minute"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_009_rerank",
+    "slice": "rerank",
+    "ticket": "What is your refund policy?",
+    "customer_context": {
+      "customer_id": "cust_pro_012",
+      "plan": "pro"
+    },
+    "gold_docs": [
+      "refund_policy"
+    ],
+    "must_mention": [
+      "refunds can be requested within 14 days of the charge"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_010_rerank",
+    "slice": "rerank",
+    "ticket": "How does getting money back for a charge work here?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "refund_policy"
+    ],
+    "must_mention": [
+      "refunds can be requested within 14 days of the charge"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_011_rerank",
+    "slice": "rerank",
+    "ticket": "Remind me of the rules for returning a payment.",
+    "customer_context": {
+      "customer_id": "cust_pro_012",
+      "plan": "pro"
+    },
+    "gold_docs": [
+      "refund_policy"
+    ],
+    "must_mention": [
+      "refunds can be requested within 14 days of the charge"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_012_hyde",
+    "slice": "hyde",
+    "ticket": "Can we make it so our old stuff automatically disappears after a set time?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "data_retention_policy"
+    ],
+    "must_mention": [
+      "data is retained per the plan's window, then permanently purged"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_013_hyde",
+    "slice": "hyde",
+    "ticket": "Is the information we keep with you safe and private?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [
+      "security_and_compliance"
+    ],
+    "must_mention": [
+      "data is encrypted in transit and at rest, and CloudDesk is SOC 2 compliant"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_014_hyde",
+    "slice": "hyde",
+    "ticket": "Can we see a record of who changed what in our workspace?",
+    "customer_context": {
+      "customer_id": "cust_enterprise_000",
+      "plan": "enterprise"
+    },
+    "gold_docs": [
+      "audit_logs_guide"
+    ],
+    "must_mention": [
+      "audit logs record who did what and are available on the Enterprise plan"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_015_cross_plan",
+    "slice": "cross_plan",
+    "ticket": "Does the Business plan include audit logs?",
+    "customer_context": {
+      "customer_id": "cust_pro_012",
+      "plan": "pro"
+    },
+    "gold_docs": [
+      "policy_features_business"
+    ],
+    "must_mention": [
+      "audit logs are not included on Business; they are Enterprise-only"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_016_cross_plan",
+    "slice": "cross_plan",
+    "ticket": "How many API requests per minute does Enterprise allow?",
+    "customer_context": {
+      "customer_id": "cust_pro_012",
+      "plan": "pro"
+    },
+    "gold_docs": [
+      "policy_features_enterprise"
+    ],
+    "must_mention": [
+      "the Enterprise plan allows 6000 API requests per minute"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_017_cross_plan",
+    "slice": "cross_plan",
+    "ticket": "Is SSO available on the Business plan?",
+    "customer_context": {
+      "customer_id": "cust_free_020",
+      "plan": "free"
+    },
+    "gold_docs": [
+      "policy_features_business"
+    ],
+    "must_mention": [
+      "SSO is available on the Business plan"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "rag_018_abstention",
+    "slice": "abstention",
+    "ticket": "Do you have a mobile app for iPhone?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [],
+    "must_mention": [],
+    "answerable": false
+  },
+  {
+    "id": "rag_019_abstention",
+    "slice": "abstention",
+    "ticket": "What are your phone support hours?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [],
+    "must_mention": [],
+    "answerable": false
+  },
+  {
+    "id": "rag_020_abstention",
+    "slice": "abstention",
+    "ticket": "Can I pay with cryptocurrency?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [],
+    "must_mention": [],
+    "answerable": false
+  },
+  {
+    "id": "rag_021_abstention",
+    "slice": "abstention",
+    "ticket": "Do you offer an on-premise / self-hosted version?",
+    "customer_context": {
+      "customer_id": "cust_business_006",
+      "plan": "business"
+    },
+    "gold_docs": [],
+    "must_mention": [],
+    "answerable": false
+  }
+]
