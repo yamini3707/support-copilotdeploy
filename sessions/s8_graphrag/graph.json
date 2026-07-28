@@ -1,0 +1,179 @@
+{
+  "entities": {
+    "Incident": [
+      "INC-2041",
+      "INC-2042",
+      "INC-2037"
+    ],
+    "Component": [
+      "SAML signing certificate",
+      "rate-limiting settings",
+      "audit-log export bundles"
+    ],
+    "Service": [
+      "SSO metadata endpoint",
+      "public API",
+      "backend services",
+      "signing service",
+      "dependent services",
+      "the platform security team"
+    ],
+    "Feature": [
+      "SSO login assertions",
+      "Audit-log export",
+      "Signed API webhooks"
+    ],
+    "Runbook": [
+      "certificate chain republishing"
+    ]
+  },
+  "nodes": {
+    "1": "INC-2041",
+    "2": "SAML signing certificate",
+    "3": "SSO login assertions",
+    "4": "SSO metadata endpoint",
+    "5": "INC-2042",
+    "6": "public API",
+    "7": "rate-limiting settings",
+    "8": "backend services",
+    "9": "INC-2037",
+    "10": "signing service",
+    "11": "audit-log export bundles",
+    "12": "certificate chain republishing",
+    "13": "dependent services",
+    "14": "the platform security team",
+    "15": "Audit-log export",
+    "16": "Signed API webhooks"
+  },
+  "edges": [
+    {
+      "subject": "INC-2041",
+      "relation": "CAUSED_BY",
+      "object": "SAML signing certificate",
+      "doc_ids": [
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "SSO login assertions",
+      "doc_ids": [
+        "arch_saml_cert",
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "DEPENDS_ON",
+      "object": "SSO metadata endpoint",
+      "doc_ids": [
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "INC-2041",
+      "relation": "REMEDIATED_BY",
+      "object": "SSO metadata endpoint",
+      "doc_ids": [
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "AFFECTS",
+      "object": "public API",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "CAUSED_BY",
+      "object": "rate-limiting settings",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "CAUSED_BY",
+      "object": "backend services",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2037",
+      "relation": "CAUSED_BY",
+      "object": "signing service",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "INC-2037",
+      "relation": "AFFECTS",
+      "object": "audit-log export bundles",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "audit-log export bundles",
+      "relation": "DEPENDS_ON",
+      "object": "signing service",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "signing service",
+      "relation": "DEPENDS_ON",
+      "object": "SAML signing certificate",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "INC-2037",
+      "relation": "REMEDIATED_BY",
+      "object": "certificate chain republishing",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "dependent services",
+      "doc_ids": [
+        "cert_rotation_runbook"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "REQUIRES",
+      "object": "the platform security team",
+      "doc_ids": [
+        "cert_rotation_runbook"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "Audit-log export",
+      "doc_ids": [
+        "arch_saml_cert"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "Signed API webhooks",
+      "doc_ids": [
+        "arch_saml_cert"
+      ]
+    }
+  ]
+}

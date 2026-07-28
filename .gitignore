@@ -27,3 +27,6 @@ sessions/s5_rag/rag_retrieval_report.py
 sessions/s5_rag/run_rag_gap.py
 # RAG → agent integration (not assigned yet)
 sessions/s6_agentic_rag/
+
+# s8 graphrag embeddings cache (regenerated locally)
+sessions/s8_graphrag/.emb_cache.json
