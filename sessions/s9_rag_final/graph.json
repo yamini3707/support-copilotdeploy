@@ -1,0 +1,216 @@
+{
+  "entities": {
+    "Incident": [
+      "INC-2041",
+      "INC-2042",
+      "INC-2039",
+      "INC-2037",
+      "INC-XXXX"
+    ],
+    "Component": [
+      "SAML signing certificate",
+      "SSO metadata endpoint",
+      "misconfiguration in rate-limiting settings"
+    ],
+    "Service": [
+      "auth-service",
+      "api-gateway",
+      "export-service",
+      "CloudDesk",
+      "signing service",
+      "public API",
+      "Business and Enterprise tiers",
+      "export-service"
+    ],
+    "Feature": [
+      "SSO login",
+      "audit-log export",
+      "signed API webhooks",
+      "SAML login"
+    ],
+    "Runbook": [
+      "certificate chain republishing",
+      "adjusting rate-limiting parameters",
+      "scaling of backend services"
+    ]
+  },
+  "nodes": {
+    "1": "SAML signing certificate",
+    "2": "SSO login",
+    "3": "audit-log export",
+    "4": "signed API webhooks",
+    "5": "INC-2041",
+    "6": "auth-service",
+    "7": "INC-2042",
+    "8": "api-gateway",
+    "9": "INC-2039",
+    "10": "export-service",
+    "11": "INC-2037",
+    "12": "signing service",
+    "13": "certificate chain republishing",
+    "14": "SSO metadata endpoint",
+    "15": "misconfiguration in rate-limiting settings",
+    "16": "public API",
+    "17": "Business and Enterprise tiers",
+    "18": "adjusting rate-limiting parameters",
+    "19": "scaling of backend services",
+    "20": "export-service",
+    "21": "INC-XXXX",
+    "22": "SAML login",
+    "23": "CloudDesk"
+  },
+  "edges": [
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "SSO login",
+      "doc_ids": [
+        "arch_saml_cert"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "audit-log export",
+      "doc_ids": [
+        "arch_saml_cert"
+      ]
+    },
+    {
+      "subject": "SAML signing certificate",
+      "relation": "AFFECTS",
+      "object": "signed API webhooks",
+      "doc_ids": [
+        "arch_saml_cert"
+      ]
+    },
+    {
+      "subject": "INC-2041",
+      "relation": "AFFECTS",
+      "object": "auth-service",
+      "doc_ids": [
+        "known_incidents"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "AFFECTS",
+      "object": "api-gateway",
+      "doc_ids": [
+        "known_incidents"
+      ]
+    },
+    {
+      "subject": "INC-2039",
+      "relation": "AFFECTS",
+      "object": "export-service",
+      "doc_ids": [
+        "known_incidents"
+      ]
+    },
+    {
+      "subject": "INC-2037",
+      "relation": "CAUSED_BY",
+      "object": "signing service",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "signing service",
+      "relation": "DEPENDS_ON",
+      "object": "SAML signing certificate",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "INC-2037",
+      "relation": "REMEDIATED_BY",
+      "object": "certificate chain republishing",
+      "doc_ids": [
+        "postmortem_inc2037"
+      ]
+    },
+    {
+      "subject": "INC-2041",
+      "relation": "CAUSED_BY",
+      "object": "signing service",
+      "doc_ids": [
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "signing service",
+      "relation": "AFFECTS",
+      "object": "SSO metadata endpoint",
+      "doc_ids": [
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "INC-2041",
+      "relation": "REMEDIATED_BY",
+      "object": "certificate chain republishing",
+      "doc_ids": [
+        "postmortem_inc2041"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "CAUSED_BY",
+      "object": "misconfiguration in rate-limiting settings",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "AFFECTS",
+      "object": "public API",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "AFFECTS",
+      "object": "Business and Enterprise tiers",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "REMEDIATED_BY",
+      "object": "adjusting rate-limiting parameters",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "INC-2042",
+      "relation": "REMEDIATED_BY",
+      "object": "scaling of backend services",
+      "doc_ids": [
+        "postmortem_inc2042"
+      ]
+    },
+    {
+      "subject": "export-service",
+      "relation": "AFFECTS",
+      "object": "INC-XXXX",
+      "doc_ids": [
+        "troubleshooting_exports"
+      ]
+    },
+    {
+      "subject": "SAML login",
+      "relation": "AFFECTS",
+      "object": "CloudDesk",
+      "doc_ids": [
+        "ts_sso_cert_rotation"
+      ]
+    }
+  ]
+}

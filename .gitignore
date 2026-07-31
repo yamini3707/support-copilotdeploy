@@ -30,3 +30,7 @@ sessions/s6_agentic_rag/
 
 # s8 graphrag embeddings cache (regenerated locally)
 sessions/s8_graphrag/.emb_cache.json
+
+# s9 unified RAG caches (regenerated locally)
+sessions/s9_rag_final/.emb_cache.json
+sessions/s9_rag_final/.graph_cache.json

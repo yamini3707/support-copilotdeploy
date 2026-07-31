@@ -1,0 +1,690 @@
+[
+  {
+    "doc_id": "account_access_recovery",
+    "title": "Account Access & Recovery",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 250,
+    "parent_child": true
+  },
+  {
+    "doc_id": "api_access_and_limits",
+    "title": "API Access & Rate Limits",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 241,
+    "parent_child": false
+  },
+  {
+    "doc_id": "arch_saml_cert",
+    "title": "Architecture \u2014 What the SAML signing certificate signs",
+    "doc_type": "architecture",
+    "plan": "all",
+    "word_count": 156,
+    "parent_child": false
+  },
+  {
+    "doc_id": "audit_logs_guide",
+    "title": "Audit Logs (Enterprise)",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 215,
+    "parent_child": false
+  },
+  {
+    "doc_id": "billing_and_invoices",
+    "title": "Billing & Invoices",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 250,
+    "parent_child": true
+  },
+  {
+    "doc_id": "cert_rotation_runbook",
+    "title": "Runbook \u2014 Safe rotation of the SAML signing certificate",
+    "doc_type": "runbook",
+    "plan": "all",
+    "word_count": 183,
+    "parent_child": false
+  },
+  {
+    "doc_id": "data_retention_policy",
+    "title": "Data Retention & Deletion",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 213,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_account_0",
+    "title": "Setting up your profile",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 133,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_account_1",
+    "title": "Notification preferences",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 133,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_account_2",
+    "title": "Renaming your workspace",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 127,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_account_3",
+    "title": "Inviting external guests",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 130,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_account_4",
+    "title": "Deactivating a member",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 137,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_api_0",
+    "title": "Getting started with API keys",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 129,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_api_1",
+    "title": "Paginating large API responses",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 139,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_api_2",
+    "title": "Choosing an SDK or client library",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 126,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_api_3",
+    "title": "Sandbox vs production environments",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 126,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_api_4",
+    "title": "API changelog and versioning",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 130,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_api_error_categories",
+    "title": "Common API error categories",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 171,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_billing_0",
+    "title": "How seat-based pricing works",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 131,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_billing_1",
+    "title": "Purchase orders and procurement",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 126,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_billing_2",
+    "title": "Setting spending alerts",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 132,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_billing_3",
+    "title": "How usage is metered",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 126,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_billing_4",
+    "title": "Managing multiple workspaces' billing",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 125,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_billing_taxes",
+    "title": "Taxes and VAT on your invoices",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 150,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_export_basics",
+    "title": "About exporting your data",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 157,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_exports_0",
+    "title": "Supported export formats",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 133,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_exports_1",
+    "title": "Scheduling recurring exports",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 135,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_exports_2",
+    "title": "Importing data into CloudDesk",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 130,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_exports_3",
+    "title": "Archiving old projects",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 123,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_exports_4",
+    "title": "Data residency overview",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 127,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_login_0",
+    "title": "Password best practices",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 137,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_login_1",
+    "title": "Clearing browser cookies for sign-in issues",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 132,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_login_2",
+    "title": "How session timeouts work",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 127,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_login_3",
+    "title": "Trusting a device for faster sign-in",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 134,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_login_4",
+    "title": "Signing in on mobile",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 129,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_refund_credits",
+    "title": "Understanding account credits",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 140,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_refunds_0",
+    "title": "How proration works when you upgrade",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 133,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_refunds_1",
+    "title": "Understanding your billing cycle",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 131,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_refunds_2",
+    "title": "Updating your payment method",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 128,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_refunds_3",
+    "title": "Reading your invoice line items",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 129,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_refunds_4",
+    "title": "Switching between monthly and annual billing",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 126,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_tls_overview",
+    "title": "How CloudDesk secures API connections",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 145,
+    "parent_child": false
+  },
+  {
+    "doc_id": "dist_webhooks_overview",
+    "title": "An overview of CloudDesk webhooks",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 156,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_app_slow",
+    "title": "The app is really slow today",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 95,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_cancel",
+    "title": "How do I stop my subscription?",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 90,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_double_billed",
+    "title": "I think you billed me twice",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 79,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_get_data_back",
+    "title": "Can I get back a project I deleted?",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 82,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_login_google",
+    "title": "Why can't I sign in with my company Google account?",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 107,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_new_teammate",
+    "title": "Adding someone to our team",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 89,
+    "parent_child": false
+  },
+  {
+    "doc_id": "faq_receipt",
+    "title": "Where do I get a receipt for accounting?",
+    "doc_type": "faq",
+    "plan": "all",
+    "word_count": 85,
+    "parent_child": false
+  },
+  {
+    "doc_id": "handbook_admin",
+    "title": "CloudDesk Admin Guide",
+    "doc_type": "handbook",
+    "plan": "all",
+    "word_count": 590,
+    "parent_child": true
+  },
+  {
+    "doc_id": "handbook_api",
+    "title": "CloudDesk API Guide",
+    "doc_type": "handbook",
+    "plan": "all",
+    "word_count": 500,
+    "parent_child": true
+  },
+  {
+    "doc_id": "handbook_billing",
+    "title": "CloudDesk Billing Handbook",
+    "doc_type": "handbook",
+    "plan": "all",
+    "word_count": 660,
+    "parent_child": true
+  },
+  {
+    "doc_id": "known_incidents",
+    "title": "Status Page \u2014 Current & Recent Incidents",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 238,
+    "parent_child": false
+  },
+  {
+    "doc_id": "plan_changes_and_upgrades",
+    "title": "Plan Changes, Upgrades & Downgrades",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 232,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_features_business",
+    "title": "Business Feature Sheet",
+    "doc_type": "policy",
+    "plan": "business",
+    "word_count": 32,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_features_enterprise",
+    "title": "Enterprise Feature Sheet",
+    "doc_type": "policy",
+    "plan": "enterprise",
+    "word_count": 32,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_features_free",
+    "title": "Free Feature Sheet",
+    "doc_type": "policy",
+    "plan": "free",
+    "word_count": 32,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_features_pro",
+    "title": "Pro Feature Sheet",
+    "doc_type": "policy",
+    "plan": "pro",
+    "word_count": 32,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_refund_annual",
+    "title": "Refund Policy \u2014 Annual",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 40,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_refund_monthly",
+    "title": "Refund Policy \u2014 Monthly",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 40,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_retention_business",
+    "title": "Data Retention \u2014 Business",
+    "doc_type": "policy",
+    "plan": "business",
+    "word_count": 52,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_retention_enterprise",
+    "title": "Data Retention \u2014 Enterprise",
+    "doc_type": "policy",
+    "plan": "enterprise",
+    "word_count": 52,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_retention_free",
+    "title": "Data Retention \u2014 Free",
+    "doc_type": "policy",
+    "plan": "free",
+    "word_count": 52,
+    "parent_child": false
+  },
+  {
+    "doc_id": "policy_retention_pro",
+    "title": "Data Retention \u2014 Pro",
+    "doc_type": "policy",
+    "plan": "pro",
+    "word_count": 52,
+    "parent_child": false
+  },
+  {
+    "doc_id": "postmortem_inc2037",
+    "title": "Postmortem INC-2037 \u2014 Audit-log export signature failures",
+    "doc_type": "postmortem",
+    "plan": "all",
+    "word_count": 182,
+    "parent_child": false
+  },
+  {
+    "doc_id": "postmortem_inc2041",
+    "title": "Postmortem: INC-2041 SSO login failures (EU)",
+    "doc_type": "postmortem",
+    "plan": "all",
+    "word_count": 118,
+    "parent_child": false
+  },
+  {
+    "doc_id": "postmortem_inc2042",
+    "title": "Postmortem: INC-2042 elevated API 5xx/429",
+    "doc_type": "postmortem",
+    "plan": "all",
+    "word_count": 204,
+    "parent_child": false
+  },
+  {
+    "doc_id": "pricing_plans",
+    "title": "CloudDesk Plans & Pricing",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 256,
+    "parent_child": true
+  },
+  {
+    "doc_id": "refund_policy",
+    "title": "CloudDesk Refund Policy",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 238,
+    "parent_child": false
+  },
+  {
+    "doc_id": "refund_policy_full",
+    "title": "CloudDesk Refund Policy (Full)",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 308,
+    "parent_child": true
+  },
+  {
+    "doc_id": "release_notes_2026_02",
+    "title": "Release notes \u2014 February 2026",
+    "doc_type": "release_note",
+    "plan": "all",
+    "word_count": 163,
+    "parent_child": false
+  },
+  {
+    "doc_id": "release_notes_2026_03",
+    "title": "Release notes \u2014 March 2026",
+    "doc_type": "release_note",
+    "plan": "all",
+    "word_count": 168,
+    "parent_child": false
+  },
+  {
+    "doc_id": "security_and_compliance",
+    "title": "Security, Compliance & Support Disclosure Rules",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 272,
+    "parent_child": true
+  },
+  {
+    "doc_id": "sso_setup_guide",
+    "title": "SSO Setup & Troubleshooting (SAML / OIDC)",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 273,
+    "parent_child": true
+  },
+  {
+    "doc_id": "troubleshooting_exports",
+    "title": "Troubleshooting Project & Doc Exports",
+    "doc_type": "policy",
+    "plan": "all",
+    "word_count": 233,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_api_403",
+    "title": "API write requests return 403 Forbidden",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 159,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_api_429",
+    "title": "Resolving HTTP 429 (Too Many Requests)",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 189,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_api_5xx",
+    "title": "Intermittent 5xx errors on the API",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 177,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_audit_empty",
+    "title": "Audit Logs page is blank",
+    "doc_type": "troubleshooting",
+    "plan": "enterprise",
+    "word_count": 172,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_export_timeout",
+    "title": "Export job times out with EXPORT_TIMEOUT",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 185,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_login_locked",
+    "title": "Account locked after failed sign-in attempts",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 150,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_mfa_lost",
+    "title": "Lost MFA device \u2014 regaining access",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 165,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_ssl_cipher",
+    "title": "ERR_SSL_VERSION_OR_CIPHER_MISMATCH when calling the API",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 144,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_sso_cert_rotation",
+    "title": "SAML login fails after certificate rotation",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 184,
+    "parent_child": false
+  },
+  {
+    "doc_id": "ts_webhook_retry",
+    "title": "Webhooks not delivered (WEBHOOK_RETRY_EXHAUSTED)",
+    "doc_type": "troubleshooting",
+    "plan": "all",
+    "word_count": 154,
+    "parent_child": false
+  }
+]
