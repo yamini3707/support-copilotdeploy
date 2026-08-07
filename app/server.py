@@ -24,11 +24,15 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, ROOT)
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from app.schemas import TicketRequest, TicketResponse
 
 app = FastAPI(title="CloudDesk Support Copilot",
               description="Router + specialists + tools + unified RAG + guardrails + memory, Langfuse-traced.",
               version="1.0")
+
+# allow the standalone HTML tester (and any browser client) to call the API cross-origin
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 _lock = threading.Lock()
 _fns = {}                                   # lazily filled with the heavy pipeline callables
