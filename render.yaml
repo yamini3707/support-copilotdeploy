@@ -1,0 +1,27 @@
+# Render deploy config. Create a Blueprint from this repo, then set the secret env vars in the
+# dashboard (they are sync:false so they are NOT stored in git).
+services:
+  - type: web
+    name: clouddesk-support-copilot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: WEAVIATE_URL
+        sync: false
+      - key: WEAVIATE_API_KEY
+        sync: false
+      - key: LANGFUSE_PUBLIC_KEY
+        sync: false
+      - key: LANGFUSE_SECRET_KEY
+        sync: false
+      - key: LANGFUSE_HOST
+        sync: false
+      - key: SUPPORT_COPILOT_MODEL
+        value: gpt-4o
+      - key: PYTHON_VERSION
+        value: "3.12"

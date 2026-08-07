@@ -2,3 +2,7 @@ openai>=1.0
 python-dotenv>=1.0
 langgraph>=1.0
 weaviate-client>=4.9
+langfuse>=2.0
+numpy>=1.26
+fastapi>=0.110
+uvicorn[standard]>=0.29
