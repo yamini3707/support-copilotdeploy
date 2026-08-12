@@ -49,7 +49,9 @@ def _pipeline():
 
 
 # warm the pipeline in the background so the port binds now and the first /ticket isn't cold
-threading.Thread(target=_pipeline, daemon=True).start()
+@app.on_event("startup")
+def _warm_pipeline():
+    threading.Thread(target=_pipeline, daemon=True).start()
 
 
 @app.get("/health")
